@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram login page</title>
+    <style>
+      body {
+          background-color: #fafafa;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      }
+      .login, #login2{
+          background-color: rgb(255, 255, 255);
+          border: 1px solid rgb(219, 219, 219);
+          border-radius: 1px;
+          margin: 0px 0px 10px;
+          padding: 10px 0px;
+          position: relative;
+          width: 348px;
+          height: 400px;
+          text-align: center;
+          align-items: center;
+          box-sizing: border-box;
+      }
+      #instLabel {
+          background-image: url(https://static.cdninstagram.com/rsrc.php/v3/y-/r/yXM3FgMdVNX.png);
+          background-position: 0px -52px;
+          background-size: auto;
+          width: 175px;
+          height: 51px;
+          background-repeat: no-repeat;
+          display: inline-block;
+          cursor:pointer;
+          margin-top: 38px;
+          margin-bottom: 36px;
+      }
+      input[type=text], input[type=password] {
+          background-color: #FAFAFA;
+          color: rgb(38, 38, 38);
+          padding:9px 0px 7px 8px;
+          margin: 0px 40px 6px;
+          width:250px;
+          height:20px;
+          font: 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+          font-weight: normal;
+          border-radius: 3px;
+          border: 1px solid rgb(219, 219, 219);
+      }
+      input[type=text]:hover, input[type=password]:hover {
+          border-color: rgb(219, 219, 219);
+      }
+      button {
+          background-color: rgb(0, 149, 246);
+          width:260px;
+          height:32px;
+          border:none;
+          border-radius: 8px;
+          color:white;
+          cursor:pointer;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+          font-size:14px;
+          font-weight:600;
+          padding: 7px 16px;
+          margin: 8px 40px;
+      }
+      #or {
+          color: #8E8E8E;
+          font: 13px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+          margin: -30px 105px;
+          background-color: white;
+          font-weight: 600;
+      }
+      .line {
+          align-items: center;
+          border-bottom: 1px solid #dadde1;
+          display: flex;
+          margin: 20px 16px;
+          text-align: center;
+
+      }
+      #lineWITHword {
+          margin: 10px 40px 18px;
+      }
+      #facebook {
+          width:16px;
+          margin-right:-72px ;
+      }
+      #facebook2 {
+          color: #385185;
+          font-size: 14px;
+          font-weight: 600;
+          cursor: pointer;
+          float:right;
+          margin-top: -1px;
+          margin-right: 15px;
+          text-decoration: none;
+      }
+      .forg {
+          color:#00376B;
+          font-size: 12px;
+          text-decoration: none;
+          margin-top:17px;
+      }
+      #login2 {
+          height:64px;
+          font-size: 14px;
+          text-align: center;
+      }
+      #screenshot1 {
+          margin-bottom:67px;
+          margin-left:-312px
+      }
+      #rightSide {
+          margin-left: 241px;
+          margin-top: 33px;
+      }
+      #leftSide {
+          margin-left:696px;
+          margin-top: -627px;
+      }
+      .otherthings {
+          text-decoration: none;
+          color:rgb(142, 142, 142);
+          font-size: 12px;
+          margin-right: 12px;
+      }
+      #bottom {
+          margin-top:60px;
+          text-align: center;
+          color:rgb(142, 142, 142);
+          margin-bottom: 50px;
+          margin-left: 15px;
+      }
+      #sel {
+          cursor: pointer;
+          font-size: 12px;
+          background-color: #fafafa;
+          color: rgb(142, 142, 142);
+          border: 1px solid #fafafa;
+          padding:8px;
+      }
+      .dec:hover {
+          text-decoration: underline;
+      }
+
+
+    </style>
+</head>
+<body>
+<div id="rightSide">
+    <img src="..\images\iphone1.png">
+    <img id="screenshot1" src="..\images\screenshot1.png">
+</div>
+<div id="leftSide">
+    <div class="login">
+        <i id="instLabel"></i>
+        <form class="logs">
+            <input type="text" placeholder="Телефон, имя пользователя или эл.адрес"><br>
+            <input type="password" placeholder="Пароль"><br>
+        </form>
+        <button>Войти</button>
+        <div id="lineWITHword">
+            <div class="line"></div>
+            <div id="or"><p>ИЛИ</p></div>
+<!--            <div class="line"></div>-->
+        </div>
+        <div style="width:268px; height:20px; margin-left:5px ;margin-top: 50px;">
+            <img id="facebook" src="..\images\facebook.png">
+            <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26state%3D%257B%2522fbLoginKey%2522%253A%25221m8l2ugi5gmjf3a4iolrf7mc71ovbqncbrbyy18w46u8xok4yn%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%26scope%3Demail%26response_type%3Dcode%252Cgranted_scopes%26locale%3Dru_RU%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D79905b2a-2a37-4510-b274-69f32800f3aa%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%25221m8l2ugi5gmjf3a4iolrf7mc71ovbqncbrbyy18w46u8xok4yn%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%23_%3D_&display=page&locale=ru_RU&pl_dbl=0" id="facebook2">Войти через Facebook</a>
+        </div>
+        <div class="forg"><a href="/accounts/password/reset/" class="forg">Забыли пароль?</a></div>
+    </div>
+    <div id="login2">
+        <div style="margin-top: -5px"><p style="color: #262626">У вас еще нет аккаунта?<a style="color:#0095F6; text-decoration: none; font-weight: 600" href="https://www.instagram.com/accounts/emailsignup/"> Зарегистрироваться</a></p></div>
+    </div>
+    <div style="width:348px;">
+        <p style="font-size: 14px; color:#262626; text-align: center;">Установите приложение.</p>
+    </div>
+    <div style="width:348px; text-align: center">
+        <img src="https://static.cdninstagram.com/rsrc.php/v3/yr/r/fDjwyLC88oO.png" style="width:134px; height:40px;">
+        <img src="https://static.cdninstagram.com/rsrc.php/v3/yv/r/_UbeIRgTpG-.png" style="width:110px; height:40px;">
+    </div>
+</div>
+<div id="bottom">
+    <div>
+        <a class="otherthings dec" href="https://about.meta.com/">Meta</a>
+        <a class="otherthings dec" href="https://about.instagram.com/">Информация</a>
+        <a class="otherthings dec" href="https://about.instagram.com/blog/">Блог</a>
+        <a class="otherthings" href="/about/jobs/">Вакансии</a>
+        <a class="otherthings dec" href="https://help.instagram.com/">Помощь</a>
+        <a class="otherthings dec" href="https://developers.facebook.com/docs/instagram">API</a>
+        <a class="otherthings" href="/legal/privacy/">Конфиденциальность</a>
+        <a class="otherthings" href="/legal/terms/">Условия</a>
+        <a class="otherthings" href="/directory/profiles/">Популярные аккаунты</a>
+        <a class="otherthings" href="/explore/locations/">Места</a>
+        <a class="otherthings" href="/web/lite/">Instagram Lite</a>
+        <a class="otherthings" href="https://l.instagram.com/?u=https%3A%2F%2Fwww.facebook.com%2Fhelp%2Finstagram%2F261704639352628&e=AT3BuwgqU762gIsvt_k7w7LYMR2yfpvdEsZ6ybEhG1wn4xA-iaeJkA-HCjGeOkPKhLalH3xXPs8Lgr6ydoKHdJu_cmYI4wamAmeX8fx3HlwLFWe9uw8V7-DRVUK9oLheX3sxaVEjcjDANwZpK8SuJg">Загрузка контактов и лица, не являющиеся пользователями</a>
+    </div>
+    <div style="font-size: 12px;">
+        <p>
+        <select id="sel">
+            <option value="ru">Русский</option>
+            <option value="af">Afrikaans</option>
+            <option value="cs">Čeština</option>
+            <option value="da">Dansk</option>
+            <option value="de">Deutsch</option>
+            <option value="tr">Türkçe</option>
+            <option value="sk">Slovenčina</option>
+        </select>
+        © 2023 Instagram from Meta</p>
+    </div>
+
+</div>
+</body>
+</html>
