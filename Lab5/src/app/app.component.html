@@ -1,0 +1,21 @@
+<app-top-bar xmlns="http://www.w3.org/1999/html"></app-top-bar>
+
+<h1>Categories</h1>
+<ul>
+  <li *ngFor="let category of categories">
+    <button type="button" (click)="show(category.id)">{{ category.name }}</button>
+    <div *ngIf='category && category.isClicked === true'>
+        <ul>
+          <li *ngFor="let product of category.products" >
+                  <app-product-list></app-product-list>
+          </li>
+        </ul>
+    </div>
+  </li>
+</ul>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
