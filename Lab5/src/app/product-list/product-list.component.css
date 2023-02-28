@@ -7,8 +7,8 @@
 }
 #products {
   flex-direction: column;
-  margin-bottom: 60px;
   float: left;
+  width:1250px
 }
 #descr {
   padding-top: 20px;

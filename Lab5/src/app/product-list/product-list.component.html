@@ -1,18 +1,20 @@
 <h2>Products</h2>
 <div id='products' *ngFor="let product of products">
-  <div id="img"><img class='product-image' src={{product.image}}></div>
-  <div id="descr">
-  <h3 class='products-overall-desc'>
-    <a  [title]="product.name + ' details'" href={{product.url}}>
-      {{ product.name }}
-    </a>
-  </h3>
-  <p class='products-overall-desc' *ngIf="product.description">Description: {{ product.description }}</p>
-  <p class='products-overall-desc' *ngIf="product.price">Price: {{product.price}} ₸</p>
-  <p class='products-overall-desc' *ngIf="product.rating">Rating: {{ product.rating }}</p>
-  <button class='products-overall-desc' type="button" (click)="share(product.id)">Share</button><br>
-    <button id="likeButton" type="button" (click)="like(product.id - 1)" >Like</button><span>{{product.likes}}</span><br>
-  <app-product-item [product]="product" (remove)="onProductRemove($event)"></app-product-item>
+     <div  *ngIf="categoryName && product.category.toLowerCase() == categoryName.toLowerCase()">
+      <div id="img"><img class='product-image' src={{product.image}}></div>
+      <div id="descr">
+      <h3 class='products-overall-desc'>
+        <a  [title]="product.name + ' details'" href={{product.url}}>
+          {{ product.name }}
+        </a>
+      </h3>
+      <p class='products-overall-desc' *ngIf="product.description">Description: {{ product.description }}</p>
+      <p class='products-overall-desc' *ngIf="product.price">Price: {{product.price}} ₸</p>
+      <p class='products-overall-desc' *ngIf="product.rating">Rating: {{ product.rating }}</p>
+      <button class='products-overall-desc' type="button" (click)="share(product.id)">Share</button><br>
+      <button id="likeButton" type="button" (click)="like(product)" >Like</button><span>{{product.likes}}</span><br>
+      <app-product-item [product]="product" (remove)="onProductRemove($event)"></app-product-item>
+      </div>
   </div>
 <!--  <app-product-alerts class='products-overall-desc'-->
 <!--    [product]="product"-->

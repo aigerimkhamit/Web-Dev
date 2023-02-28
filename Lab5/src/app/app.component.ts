@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Product, products} from "./products";
 import {filter} from "rxjs";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,9 @@ import {filter} from "rxjs";
 })
 
 export class AppComponent{
+
+  products = products;
+
   categories = [
     {
       id: 1,

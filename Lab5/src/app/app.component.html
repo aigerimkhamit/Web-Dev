@@ -2,14 +2,12 @@
 
 <h1>Categories</h1>
 <ul>
-  <li *ngFor="let category of categories">
-    <button type="button" (click)="show(category.id)">{{ category.name }}</button>
+  <li *ngFor="let category of categories" >
+    <button type="button" (click)="show(category.id)">
+        {{ category.name }}
+    </button>
     <div *ngIf='category && category.isClicked === true'>
-        <ul>
-          <li *ngFor="let product of category.products" >
-                  <app-product-list></app-product-list>
-          </li>
-        </ul>
+        <app-product-list [categoryName]="category.name" ></app-product-list>
     </div>
   </li>
 </ul>

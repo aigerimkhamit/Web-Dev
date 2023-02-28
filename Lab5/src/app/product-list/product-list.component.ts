@@ -1,19 +1,23 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 import {Product, products} from '../products';
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
-export class ProductListComponent  {
+export class ProductListComponent{
   products = products;
+
+  @Input() categoryName: string|undefined;
+
   share(a:number) {
     window.open(`https://api.whatsapp.com/send/?phone=77073130212&text=Здравствуйте, я бы хотела приобрести этот продукт ${products[a - 1]['url']}&type=phone_number&app_absent=0`);
   }
-  like(a:number){
-    this.products[a]['likes']++;
+  like(a:Product){
+    a.likes++;
   }
   onProductRemove(a:Product){
     this.products = this.products.filter((x) => x !== a);
