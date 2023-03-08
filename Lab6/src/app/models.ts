@@ -2,7 +2,7 @@ export interface Album {
   userId: number;
   id: number;
   title:string;
-
+  editing: boolean;
 }
 
 export interface Photo {

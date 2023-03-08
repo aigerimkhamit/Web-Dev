@@ -8,3 +8,12 @@ h3 {
 h5, p, a {
   font-size: 20px;
 }
+
+button {
+  padding: 7px;
+  margin-left: 10px;
+}
+input[type='text'] {
+  font-size: 18px;
+  padding: 4px;
+}

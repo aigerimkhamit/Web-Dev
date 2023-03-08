@@ -13,9 +13,12 @@ import { Location } from '@angular/common';
 export class AlbumDetailComponent implements OnInit{
   album: Album;
   loaded: boolean;
+  updatedTitle: string;
   constructor(private route: ActivatedRoute, private albumService: AlbumService, public location: Location) {
     this.album ={} as Album;
     this.loaded = true;
+    this.album.editing = false;
+    this.updatedTitle = '';
   }
   ngOnInit() {
     this.getAlbumDetails();
@@ -30,6 +33,17 @@ export class AlbumDetailComponent implements OnInit{
       });
       // this.album = Albums.find((album:Album) => album.id === id) as Album;
     })
+  }
+  edit(){
+    this.album.editing = true;
+  }
+  save(){
+    this.album.title = this.updatedTitle;
+    this.albumService.updateAlbum(this.album).subscribe((album)=> {
+      this.album = album;
+      this.album.editing = false;
+      this.updatedTitle = '';
+    });
   }
 
 

@@ -2,14 +2,14 @@
   <button (click)="location.back()">Return back</button>
   <h3>Details of Album №{{album.id}}</h3>
   <div>
-<!--    <div *ngIf="!editing">-->
-      <h5>Title: {{album.title}}</h5>
-<!--    </div>-->
-<!--    <form *ngIf="editing">-->
-<!--      <input [(ngModel)]="album.title"/>-->
-<!--    </form>-->
-<!--    <button (click)="edit(album)" >Edit</button>-->
-<!--    <button (click)="save(album)" >Save</button>-->
+    <div>
+      <h5>Title: {{album.title}}<span><button (click)="edit()" >Edit</button></span></h5>
+    </div>
+
+    <div *ngIf="album.editing">
+      <input type="text" [(ngModel)]="updatedTitle"/>
+      <button (click)="save()" >Save</button>
+    </div>
   </div>
   <p>Click to watch the <a routerLink="/albums/{{album.id}}/photos">photos</a> of the album!</p>
 </div>
