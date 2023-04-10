@@ -1,18 +1,46 @@
 from django.db import models
+import json
+
 
 # Create your models here.
 
 class Company(models.Model):
     name = models.CharField(max_length=400)
     description = models.TextField()
-    city = models.CharField()
+    city = models.CharField(max_length=400)
     address = models.TextField()
+
+    def __str__(self):
+        return self.name
+
+    def to_json(self):
+        companies = {
+            'id': self.id,
+            'name': self.name,
+            'description': self.description,
+            'city': self.city,
+            'address': self.address
+        }
+        json_companies = json.dumps(companies, indent=4)
+        return json_companies
+
 
 class Vacancy(models.Model):
     name = models.CharField(max_length=400)
     description = models.TextField()
     salary = models.FloatField()
-    company = models.ForeignKey(Company, on_delete=models.CASCADE())
+    company = models.ForeignKey(Company, on_delete=models.CASCADE)
 
+    def __str__(self):
+        return self.name
 
-
+    def to_json(self):
+        vacancies = {
+            'id': self.id,
+            'name': self.name,
+            'description': self.description,
+            'salary': self.salary,
+            'company': self.company.name
+        }
+        json_vacancies = json.dumps(vacancies, indent=4)
+        return json_vacancies

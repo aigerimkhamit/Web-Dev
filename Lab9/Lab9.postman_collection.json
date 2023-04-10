@@ -1,0 +1,398 @@
+{
+	"info": {
+		"_postman_id": "9561075a-92be-4d74-89f6-23466dc8c0f6",
+		"name": "Lab9",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26793743"
+	},
+	"item": [
+		{
+			"name": "Lab9",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/companies",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"companies"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "companies",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/companies",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"companies"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 10 Apr 2023 06:27:43 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.13"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2017"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Toyota Tsusho Kazakhstan LLP\",\n    \"description\": \"Toyota Tsusho Kazakhstan LLP is a subsidiary of Toyota Tsusho Corporation, one of the world's leading trading companies. It is engaged in a wide range of businesses, including automotive, machinery, chemicals, and more in Kazakhstan.\",\n    \"city\": \"Almaty\",\n    \"address\": \"101/1 Zholdasbekov St., Almaty 050051, Kazakhstan\"\n}{\n    \"id\": 2,\n    \"name\": \"Air Astana\",\n    \"description\": \"Air Astana is the national airline of Kazakhstan, offering domestic and international flights. It is a joint venture between the government of Kazakhstan and BAE Systems, and is known for its modern fleet and high-quality services.\",\n    \"city\": \"Nur-Sultan\",\n    \"address\": \"4A, Zakarpatskaya Street, Nur-Sultan 010000, Kazakhstan\"\n}{\n    \"id\": 3,\n    \"name\": \"Chevron Kazakhstan Inc.\",\n    \"description\": \"Chevron Kazakhstan Inc. is an international oil and gas company engaged in the exploration, production, and development of hydrocarbons in Kazakhstan. It is one of the largest foreign investors in Kazakhstan's energy sector.\",\n    \"city\": \"Atyrau\",\n    \"address\": \"1st Microdistrict, Building 14A, Atyrau 060011, Kazakhstan\"\n}{\n    \"id\": 4,\n    \"name\": \"Shell Kazakhstan\",\n    \"description\": \"Shell Kazakhstan is a subsidiary of Royal Dutch Shell, one of the world's largest oil and gas companies. It is involved in exploration, production, and development of hydrocarbons in Kazakhstan, with a focus on sustainable energy solutions.\",\n    \"city\": \"Nur-Sultan\",\n    \"address\": \"12 Dostyk Street, Astana, Nur-Sultan 010000, Kazakhstan\"\n}{\n    \"id\": 5,\n    \"name\": \"Coca-Cola Kazakhstan\",\n    \"description\": \"Coca-Cola Kazakhstan is a subsidiary of The Coca-Cola Company, one of the world's largest beverage companies. It manufactures, distributes, and markets a wide range of non-alcoholic beverages, including soft drinks, juices, and more in Kazakhstan.\",\n    \"city\": \"Almaty\",\n    \"address\": \"2B, Al-Farabi Ave., Almaty 050059, Kazakhstan\"\n}"
+				},
+				{
+					"name": "company_detail",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/companies/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"companies",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 10 Apr 2023 06:28:49 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.13"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "395"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"name\": \"Air Astana\",\n    \"description\": \"Air Astana is the national airline of Kazakhstan, offering domestic and international flights. It is a joint venture between the government of Kazakhstan and BAE Systems, and is known for its modern fleet and high-quality services.\",\n    \"city\": \"Nur-Sultan\",\n    \"address\": \"4A, Zakarpatskaya Street, Nur-Sultan 010000, Kazakhstan\"\n}"
+				},
+				{
+					"name": "company_vacancies",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/companies/2/vacancies",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"companies",
+								"2",
+								"vacancies"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 10 Apr 2023 06:29:08 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.13"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "936"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"name\": \"Aircraft Maintenance Engineer\",\n    \"description\": \"The Aircraft Maintenance Engineer will be responsible for performing aircraft maintenance and repairs, conducting inspections, troubleshooting and repairing aircraft systems, and ensuring compliance with aviation regulations and safety standards. This role requires relevant certifications, technical expertise, and attention to detail.\",\n    \"salary\": 1500000.0,\n    \"company\": \"Air Astana\"\n}{\n    \"id\": 7,\n    \"name\": \"Cabin Crew (Flight Attendant)\",\n    \"description\": \"The Cabin Crew (Flight Attendant) will provide excellent customer service, ensure passenger safety, and assist with in-flight services such as meal service, passenger comfort, and emergency procedures. This role requires strong communication skills, customer service orientation, and fluency in English and/or Kazakh languages.\",\n    \"salary\": 400000.0,\n    \"company\": \"Air Astana\"\n}"
+				},
+				{
+					"name": "vacancies",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/vacancies",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"vacancies"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 10 Apr 2023 06:29:24 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.13"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "6181"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Senior Geologist\",\n    \"description\": \"The Senior Geologist will be responsible for leading and managing geological exploration projects, conducting geological surveys and analysis, and providing technical expertise in oil and gas exploration and production. This role requires strong geological knowledge, field experience, and leadership skills.\",\n    \"salary\": 700000.0,\n    \"company\": \"Chevron Kazakhstan Inc.\"\n}{\n    \"id\": 2,\n    \"name\": \"Supply Chain Manager\",\n    \"description\": \"The Supply Chain Manager will oversee and manage the end-to-end supply chain operations, including procurement, logistics, inventory management, and vendor management. This role will involve strategic planning, process optimization, and supplier performance management to ensure efficient and cost-effective supply chain operations.\",\n    \"salary\": 500000.0,\n    \"company\": \"Toyota Tsusho Kazakhstan LLP\"\n}{\n    \"id\": 3,\n    \"name\": \"Marketing Manager\",\n    \"description\": \"The Marketing Manager will develop and implement marketing strategies and plans, conduct market research, manage marketing campaigns, and oversee brand management and communication efforts. This role requires strong marketing expertise, creativity, and strategic thinking.\",\n    \"salary\": 1000000.0,\n    \"company\": \"Coca-Cola Kazakhstan\"\n}{\n    \"id\": 4,\n    \"name\": \"Aircraft Maintenance Engineer\",\n    \"description\": \"The Aircraft Maintenance Engineer will be responsible for performing aircraft maintenance and repairs, conducting inspections, troubleshooting and repairing aircraft systems, and ensuring compliance with aviation regulations and safety standards. This role requires relevant certifications, technical expertise, and attention to detail.\",\n    \"salary\": 1500000.0,\n    \"company\": \"Air Astana\"\n}{\n    \"id\": 5,\n    \"name\": \"Reservoir Engineer\",\n    \"description\": \"The Reservoir Engineer will be responsible for reservoir characterization, reservoir simulation, and production forecasting to optimize hydrocarbon recovery. This role requires strong technical skills in reservoir engineering, data analysis, and proficiency in reservoir simulation software.\",\n    \"salary\": 130.0,\n    \"company\": \"Chevron Kazakhstan Inc.\"\n}{\n    \"id\": 6,\n    \"name\": \"Health, Safety, and Environment (HSE) Specialist\",\n    \"description\": \"The HSE Specialist will develop and implement health, safety, and environment programs, conduct risk assessments, provide training, and ensure compliance with HSE regulations and standards. This role requires strong knowledge of HSE principles and regulations, and experience in developing and implementing HSE management systems.\",\n    \"salary\": 90.0,\n    \"company\": \"Chevron Kazakhstan Inc.\"\n}{\n    \"id\": 7,\n    \"name\": \"Cabin Crew (Flight Attendant)\",\n    \"description\": \"The Cabin Crew (Flight Attendant) will provide excellent customer service, ensure passenger safety, and assist with in-flight services such as meal service, passenger comfort, and emergency procedures. This role requires strong communication skills, customer service orientation, and fluency in English and/or Kazakh languages.\",\n    \"salary\": 400000.0,\n    \"company\": \"Air Astana\"\n}{\n    \"id\": 8,\n    \"name\": \"Sales Representative\",\n    \"description\": \"The Sales Representative will be responsible for promoting and selling Coca-Cola products to retailers, managing customer relationships, and achieving sales targets. This role requires strong sales skills, customer service orientation, and ability to work in a fast-paced environment.\",\n    \"salary\": 2.0,\n    \"company\": \"Coca-Cola Kazakhstan\"\n}{\n    \"id\": 9,\n    \"name\": \"Logistics Coordinator\",\n    \"description\": \"The Logistics Coordinator will manage transportation and distribution activities, coordinate with suppliers and carriers, and ensure timely delivery of products. This role requires strong organizational skills, knowledge of logistics processes, and ability to work with cross-functional teams.\",\n    \"salary\": 3.0,\n    \"company\": \"Coca-Cola Kazakhstan\"\n}{\n    \"id\": 10,\n    \"name\": \"Automotive Technician\",\n    \"description\": \"The Automotive Technician will diagnose and repair vehicles, perform routine maintenance, and ensure customer satisfaction. This role requires strong technical skills in automotive repair, knowledge of diagnostic tools, and ability to work in a fast-paced environment.\",\n    \"salary\": 2.5,\n    \"company\": \"Toyota Tsusho Kazakhstan LLP\"\n}{\n    \"id\": 11,\n    \"name\": \"Supply Chain Analyst\",\n    \"description\": \"The Supply Chain Analyst will analyze and optimize supply chain processes, monitor inventory levels, and ensure efficient and cost-effective operations. This role requires strong analytical skills, knowledge of supply chain management principles, and proficiency in English language.\",\n    \"salary\": 3.0,\n    \"company\": \"Toyota Tsusho Kazakhstan LLP\"\n}{\n    \"id\": 12,\n    \"name\": \"Process Engineer\",\n    \"description\": \"The Process Engineer will optimize and improve production processes, troubleshoot and resolve issues, and ensure compliance with safety and environmental regulations. This role requires strong engineering skills, knowledge of process optimization techniques, and experience in the oil and gas industry.\",\n    \"salary\": 3.5,\n    \"company\": \"Shell Kazakhstan\"\n}{\n    \"id\": 13,\n    \"name\": \"Maintenance Technician\",\n    \"description\": \"The Maintenance Technician will perform maintenance activities on plant equipment, troubleshoot and repair mechanical, electrical, and instrumentation systems, and ensure equipment reliability. This role requires strong technical skills, knowledge of maintenance best practices, and experience in the oil and gas industry.\",\n    \"salary\": 2.5,\n    \"company\": \"Shell Kazakhstan\"\n}{\n    \"id\": 14,\n    \"name\": \"HSE Specialist\",\n    \"description\": \"The HSE Specialist will develop and implement health, safety, and environment programs, conduct risk assessments, and ensure compliance with HSE regulations and standards. This role requires strong knowledge of HSE principles and regulations, and experience in developing and implementing HSE management systems.\",\n    \"salary\": 3000000.0,\n    \"company\": \"Shell Kazakhstan\"\n}"
+				},
+				{
+					"name": "vacancy_detail",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/vacancies/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"vacancies",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 10 Apr 2023 06:29:39 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.13"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "477"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"name\": \"Supply Chain Manager\",\n    \"description\": \"The Supply Chain Manager will oversee and manage the end-to-end supply chain operations, including procurement, logistics, inventory management, and vendor management. This role will involve strategic planning, process optimization, and supplier performance management to ensure efficient and cost-effective supply chain operations.\",\n    \"salary\": 500000,\n    \"company\": \"Toyota Tsusho Kazakhstan LLP\"\n}"
+				},
+				{
+					"name": "vacancies_top_ten",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/vacancies/top_ten",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"vacancies",
+								"top_ten"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 10 Apr 2023 06:29:57 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.13"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4478"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 14,\n    \"name\": \"HSE Specialist\",\n    \"description\": \"The HSE Specialist will develop and implement health, safety, and environment programs, conduct risk assessments, and ensure compliance with HSE regulations and standards. This role requires strong knowledge of HSE principles and regulations, and experience in developing and implementing HSE management systems.\",\n    \"salary\": 3000000.0,\n    \"company\": \"Shell Kazakhstan\"\n}{\n    \"id\": 4,\n    \"name\": \"Aircraft Maintenance Engineer\",\n    \"description\": \"The Aircraft Maintenance Engineer will be responsible for performing aircraft maintenance and repairs, conducting inspections, troubleshooting and repairing aircraft systems, and ensuring compliance with aviation regulations and safety standards. This role requires relevant certifications, technical expertise, and attention to detail.\",\n    \"salary\": 1500000.0,\n    \"company\": \"Air Astana\"\n}{\n    \"id\": 3,\n    \"name\": \"Marketing Manager\",\n    \"description\": \"The Marketing Manager will develop and implement marketing strategies and plans, conduct market research, manage marketing campaigns, and oversee brand management and communication efforts. This role requires strong marketing expertise, creativity, and strategic thinking.\",\n    \"salary\": 1000000.0,\n    \"company\": \"Coca-Cola Kazakhstan\"\n}{\n    \"id\": 1,\n    \"name\": \"Senior Geologist\",\n    \"description\": \"The Senior Geologist will be responsible for leading and managing geological exploration projects, conducting geological surveys and analysis, and providing technical expertise in oil and gas exploration and production. This role requires strong geological knowledge, field experience, and leadership skills.\",\n    \"salary\": 700000.0,\n    \"company\": \"Chevron Kazakhstan Inc.\"\n}{\n    \"id\": 2,\n    \"name\": \"Supply Chain Manager\",\n    \"description\": \"The Supply Chain Manager will oversee and manage the end-to-end supply chain operations, including procurement, logistics, inventory management, and vendor management. This role will involve strategic planning, process optimization, and supplier performance management to ensure efficient and cost-effective supply chain operations.\",\n    \"salary\": 500000.0,\n    \"company\": \"Toyota Tsusho Kazakhstan LLP\"\n}{\n    \"id\": 7,\n    \"name\": \"Cabin Crew (Flight Attendant)\",\n    \"description\": \"The Cabin Crew (Flight Attendant) will provide excellent customer service, ensure passenger safety, and assist with in-flight services such as meal service, passenger comfort, and emergency procedures. This role requires strong communication skills, customer service orientation, and fluency in English and/or Kazakh languages.\",\n    \"salary\": 400000.0,\n    \"company\": \"Air Astana\"\n}{\n    \"id\": 5,\n    \"name\": \"Reservoir Engineer\",\n    \"description\": \"The Reservoir Engineer will be responsible for reservoir characterization, reservoir simulation, and production forecasting to optimize hydrocarbon recovery. This role requires strong technical skills in reservoir engineering, data analysis, and proficiency in reservoir simulation software.\",\n    \"salary\": 130.0,\n    \"company\": \"Chevron Kazakhstan Inc.\"\n}{\n    \"id\": 6,\n    \"name\": \"Health, Safety, and Environment (HSE) Specialist\",\n    \"description\": \"The HSE Specialist will develop and implement health, safety, and environment programs, conduct risk assessments, provide training, and ensure compliance with HSE regulations and standards. This role requires strong knowledge of HSE principles and regulations, and experience in developing and implementing HSE management systems.\",\n    \"salary\": 90.0,\n    \"company\": \"Chevron Kazakhstan Inc.\"\n}{\n    \"id\": 12,\n    \"name\": \"Process Engineer\",\n    \"description\": \"The Process Engineer will optimize and improve production processes, troubleshoot and resolve issues, and ensure compliance with safety and environmental regulations. This role requires strong engineering skills, knowledge of process optimization techniques, and experience in the oil and gas industry.\",\n    \"salary\": 3.5,\n    \"company\": \"Shell Kazakhstan\"\n}{\n    \"id\": 9,\n    \"name\": \"Logistics Coordinator\",\n    \"description\": \"The Logistics Coordinator will manage transportation and distribution activities, coordinate with suppliers and carriers, and ensure timely delivery of products. This role requires strong organizational skills, knowledge of logistics processes, and ability to work with cross-functional teams.\",\n    \"salary\": 3.0,\n    \"company\": \"Coca-Cola Kazakhstan\"\n}"
+				}
+			]
+		}
+	]
+}
